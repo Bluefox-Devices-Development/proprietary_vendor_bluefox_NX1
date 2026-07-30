@@ -15838,7 +15838,7 @@ cc_prebuilt_binary {
     name: "fuelgauged",
     owner: "bluefox",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/fuelgauged",
             ],
@@ -15853,7 +15853,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
