@@ -216,6 +216,7 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/trustkernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustkernel.rc \
+    vendor/bluefox/NX1/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
@@ -259,13 +260,22 @@ PRODUCT_PACKAGES += \
     lights.mt6768 \
     libGsFace_ca \
     libTEECommon \
+    libaedv \
+    libbwc \
     libcv_faceid \
+    libgz_uree \
+    libion_mtk \
+    libion_ulit \
     libipsec_ims_shr \
     libkphhelper \
     libkphproxy \
+    libladder \
+    libmtk_drvb \
     libpl \
     libstfaceunlock \
     libteec \
+    libvcodec_utility_v3a \
+    libvcodecdrv_v3a \
     libverno \
     libaecsw_mtk \
     libagc1sw_mtk \
@@ -274,6 +284,7 @@ PRODUCT_PACKAGES += \
     libpreprocessingaidl_mtk \
     libvolte_core_shr \
     libvolte_xdmc_shr \
+    libvpudv3a_vcodec \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0 \
     android.hardware.audio.core-impl-mediatek \
@@ -348,7 +359,6 @@ PRODUCT_PACKAGES += \
     libaal_sec \
     libaalservice \
     libabfadp \
-    libaedv \
     libapmonitor_vendor \
     libapu_mdw \
     libarm_egl_properties_sysprop \
@@ -375,7 +385,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbt-vendor \
-    libbwc \
     libcam.chdr \
     libcam.feature_utils \
     libcam.hal3a.cctsvr \
@@ -452,7 +461,6 @@ PRODUCT_PACKAGES += \
     libgralloc_extra \
     libgralloc_metadata \
     libgralloctypes_mtk \
-    libgz_uree \
     libh264dec_customize \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
@@ -465,11 +473,8 @@ PRODUCT_PACKAGES += \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     libimgsensorca \
-    libion_mtk \
-    libion_ulit \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libladder \
     liblpcnr \
     libmfllcore \
     libmipc \
@@ -483,7 +488,6 @@ PRODUCT_PACKAGES += \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtk_bsg \
-    libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \
     libmtkcam.eventcallback \
@@ -600,8 +604,6 @@ PRODUCT_PACKAGES += \
     libutinterface_custom_md \
     libutinterface_md \
     libvcodec_oal \
-    libvcodec_utility_v3a \
-    libvcodecdrv_v3a \
     libvia-ril \
     libviamipc-ril \
     libvp8dec_sa.ca7 \
@@ -809,6 +811,7 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     tee_check_keybox \
     teed \
+    v3avpud \
     volte_clientapi_ua \
     volte_imcb \
     volte_imsm_93 \
