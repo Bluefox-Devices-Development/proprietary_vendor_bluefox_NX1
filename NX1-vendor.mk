@@ -605,7 +605,7 @@ PRODUCT_PACKAGES += \
     libviamipc-ril \
     libvp8dec_sa.ca7 \
     libvp9dec_sa.ca7 \
-    libwifi-hal \
+    libwifi-hal-mtk \
     libwifinvram \
     libwifinvramdata \
     libwo \
