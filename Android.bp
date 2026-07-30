@@ -1504,7 +1504,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libaudioutils",
                 "libtinyalsa",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libaudiotoolkit_vendor",
                 "libmedia_helper",
                 "libladder",
