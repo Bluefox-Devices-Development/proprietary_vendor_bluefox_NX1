@@ -17270,3 +17270,38 @@ cc_prebuilt_binary {
     prefer: true,
     system_ext_specific: true,
 }
+
+install_symlink {
+    name: "vendor_lib64_libdpframework_so",
+    soc_specific: true,
+    installed_location: "lib64/libdpframework.so",
+    symlink_target: "/vendor/lib64/mt6768/libdpframework.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libmml_so",
+    soc_specific: true,
+    installed_location: "lib64/libmml.so",
+    symlink_target: "/vendor/lib64/mt6768/libmml.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libmmlpqImpl_so",
+    soc_specific: true,
+    installed_location: "lib64/libmmlpqImpl.so",
+    symlink_target: "/vendor/lib64/mt6768/libmmlpqImpl.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libpq_sec_so",
+    soc_specific: true,
+    installed_location: "lib64/libpq_sec.so",
+    symlink_target: "/vendor/lib64/mt6768/libpq_sec.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libpqparamparser_so",
+    soc_specific: true,
+    installed_location: "lib64/libpqparamparser.so",
+    symlink_target: "/vendor/lib64/mt6768/libpqparamparser.so",
+}

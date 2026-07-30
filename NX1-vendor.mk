@@ -821,3 +821,10 @@ PRODUCT_PACKAGES += \
     wmt_loader \
     android.hardware.audio.parameter_parser.service \
     vtservice
+
+PRODUCT_PACKAGES += \
+    vendor_lib64_libdpframework_so \
+    vendor_lib64_libmml_so \
+    vendor_lib64_libmmlpqImpl_so \
+    vendor_lib64_libpq_sec_so \
+    vendor_lib64_libpqparamparser_so
