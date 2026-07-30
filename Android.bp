@@ -896,6 +896,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.hardware.audio.core-impl-mediatek.so",
             ],
             shared_libs: [
+                "libaudioutils_shim",
                 "android.hardware.bluetooth.audio-V4-ndk",
                 "android.hardware.audio.core.sounddose-V2-ndk",
                 "android.hardware.audio.core-V2-ndk",
