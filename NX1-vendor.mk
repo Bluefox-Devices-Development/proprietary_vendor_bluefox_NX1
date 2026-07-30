@@ -183,6 +183,7 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/android.hardware.ir-service.example.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example.mediatek.rc \
+    vendor/bluefox/NX1/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustkernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustkernel.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/bluefox/NX1/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
