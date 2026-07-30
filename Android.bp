@@ -15516,18 +15516,40 @@ dex_import {
     name: "mediatek-ims-base",
     owner: "bluefox",
     jars: [
-        "proprietary/system_ext/framework/mediatek-ims-base.jar",
+        "proprietary/system/framework/mediatek-ims-base.jar",
     ],
-    system_ext_specific: true,
 }
 
 dex_import {
     name: "mediatek-ims-common",
     owner: "bluefox",
     jars: [
-        "proprietary/system_ext/framework/mediatek-ims-common.jar",
+        "proprietary/system/framework/mediatek-ims-common.jar",
     ],
-    system_ext_specific: true,
+}
+
+dex_import {
+    name: "mediatek-telecom-common",
+    owner: "bluefox",
+    jars: [
+        "proprietary/system/framework/mediatek-telecom-common.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telephony-base",
+    owner: "bluefox",
+    jars: [
+        "proprietary/system/framework/mediatek-telephony-base.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telephony-common",
+    owner: "bluefox",
+    jars: [
+        "proprietary/system/framework/mediatek-telephony-common.jar",
+    ],
 }
 
 dex_import {
@@ -15535,33 +15557,6 @@ dex_import {
     owner: "bluefox",
     jars: [
         "proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telecom-common",
-    owner: "bluefox",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telecom-common.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telephony-base",
-    owner: "bluefox",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telephony-base.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telephony-common",
-    owner: "bluefox",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telephony-common.jar",
     ],
     system_ext_specific: true,
 }

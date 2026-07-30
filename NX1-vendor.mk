@@ -749,10 +749,10 @@ PRODUCT_PACKAGES += \
     MtkTelephonyAssist \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-ims-extension-plugin \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    mediatek-ims-extension-plugin \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.mediatek.xml \
     android.hardware.gatekeeper-service.trustkernel.xml \
@@ -828,3 +828,10 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmmlpqImpl_so \
     vendor_lib64_libpq_sec_so \
     vendor_lib64_libpqparamparser_so
+
+PRODUCT_BOOT_JARS += \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
