@@ -125,6 +125,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libGsFace_ca.so",
             ],
             shared_libs: [
+                "libteec",
                 "libdl",
                 "liblog",
                 "libTEECommon",
@@ -137,6 +138,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libGsFace_ca.so",
             ],
             shared_libs: [
+                "libteec",
                 "liblog",
                 "libTEECommon",
                 "libc",
