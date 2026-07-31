@@ -6755,6 +6755,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_aidl-mtk",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_aidl-mtk.so",
+            ],
+            shared_libs: [
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.media.bufferpool2-V2-ndk",
+                "android.hardware.media.c2-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcodec2",
+                "libcodec2_hal_common",
+                "libcodec2_vndk",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_aidl_bufferpool2",
+                "libstagefright_bufferpool@2.0.1",
+                "libui",
+                "libutils",
+                "libcodec2_hidl_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcodec2_fsr",
     owner: "bluefox",
     strip: {
@@ -6849,7 +6892,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
-                "libcodec2_aidl",
+                "libcodec2_aidl-mtk",
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "android.hardware.media.c2@1.0",
@@ -6917,7 +6960,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
-                "libcodec2_aidl",
+                "libcodec2_aidl-mtk",
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "android.hardware.media.c2@1.0",
@@ -16894,7 +16937,7 @@ cc_prebuilt_binary {
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "libcodec2_hal_common",
-                "libcodec2_aidl",
+                "libcodec2_aidl-mtk",
                 "libbase",
                 "liblog",
                 "libcodec2",

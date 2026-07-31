@@ -444,6 +444,7 @@ PRODUCT_PACKAGES += \
     libcarrierconfig \
     libccci_util \
     libchromanr \
+    libcodec2_aidl-mtk \
     libcodec2_fsr \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
