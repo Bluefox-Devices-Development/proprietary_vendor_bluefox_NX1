@@ -36,6 +36,388 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "arm.graphics-V5-ndk",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/arm.graphics-V5-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/arm.graphics-V5-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "arm.mali.platform-V2-ndk",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/arm.mali.platform-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/arm.mali.platform-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libGLES_mali",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libGLES_mali.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "liblog",
+                "libutilscallstack",
+                "libbase",
+                "libnativewindow",
+                "libutils",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "libhidlbase",
+                "libgpu_aux",
+                "libion",
+                "libged",
+                "libgpud",
+                "libgralloc_extra",
+                "libladder",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libcutils",
+                "libhardware",
+                "android.hardware.graphics.common-V7-ndk",
+                "libdmabufheap",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libGLES_mali.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "liblog",
+                "libutilscallstack",
+                "libbase",
+                "libnativewindow",
+                "libutils",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "libhidlbase",
+                "libgpu_aux",
+                "libion",
+                "libged",
+                "libgpud",
+                "libgralloc_extra",
+                "libladder",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libcutils",
+                "libhardware",
+                "android.hardware.graphics.common-V7-ndk",
+                "libdmabufheap",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libGLES_meow",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libGLES_meow.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libGLES_meow.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_data",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libMEOW_data.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_data.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_gift",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libMEOW_gift.so",
+            ],
+            shared_libs: [
+                "libFrameRecord",
+                "libDefaultFpsActor",
+                "libNoFpsActor",
+                "libnativewindow",
+                "libutilscallstack",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_gift.so",
+            ],
+            shared_libs: [
+                "libFrameRecord",
+                "libDefaultFpsActor",
+                "libNoFpsActor",
+                "libnativewindow",
+                "libutilscallstack",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_qt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libMEOW_qt.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_qt.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_trace",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libMEOW_trace.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnativewindow",
+                "libGLES_meow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_trace.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnativewindow",
+                "libGLES_meow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "consumerir.common",
     owner: "bluefox",
     strip: {
@@ -114,6 +496,126 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vulkan.mali",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vulkan.mali.so",
+            ],
+            shared_libs: [
+                "libGLES_mali",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vulkan.mali.so",
+            ],
+            shared_libs: [
+                "libGLES_mali",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libDefaultFpsActor",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libDefaultFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libDefaultFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libFrameRecord",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libFrameRecord.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libFrameRecord.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libGsFace_ca",
     owner: "bluefox",
     strip: {
@@ -141,6 +643,47 @@ cc_prebuilt_library_shared {
                 "libteec",
                 "liblog",
                 "libTEECommon",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libNoFpsActor",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libNoFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libNoFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -235,6 +778,117 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libarm_egl_properties_sysprop",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarm_egl_properties_sysprop.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarm_egl_properties_sysprop.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarm_gralloc_properties_sysprop",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarm_gralloc_properties_sysprop.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarm_gralloc_properties_sysprop.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarm_mali_config_sysprops",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libarm_mali_config_sysprops.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarm_mali_config_sysprops.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbwc",
     owner: "bluefox",
     strip: {
@@ -303,6 +957,338 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libged",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libged.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libsync",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libged.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libsync",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgpu_aux",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgpu_aux.so",
+            ],
+            shared_libs: [
+                "libdpframework",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra",
+                "libsync",
+                "libgpud",
+                "libhidlbase",
+                "libbase",
+                "libbinder_ndk",
+                "libgralloctypes",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "vendor.mediatek.hardware.mms-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgpu_aux.so",
+            ],
+            shared_libs: [
+                "libdpframework",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra",
+                "libsync",
+                "libgpud",
+                "libhidlbase",
+                "libbase",
+                "libbinder_ndk",
+                "libgralloctypes",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "vendor.mediatek.hardware.mms-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgpud",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgpud.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra",
+                "libhidlbase",
+                "libgralloctypes",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgpud.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra",
+                "libhidlbase",
+                "libgralloctypes",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloc_extra",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgralloc_extra.so",
+            ],
+            shared_libs: [
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libdmabufheap",
+                "libged",
+                "libutilscallstack",
+                "android.hardware.graphics.common@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgralloc_extra.so",
+            ],
+            shared_libs: [
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libdmabufheap",
+                "libged",
+                "libutilscallstack",
+                "android.hardware.graphics.common@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloc_metadata",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgralloc_metadata.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgralloc_metadata.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgralloctypes_mtk",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgralloctypes_mtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgralloctypes_mtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "libhardware",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libion",
+                "libc",
+                "libc++",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -663,6 +1649,184 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpqhdrmetaparser",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpqhdrmetaparser.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmml",
+                "libsdrparser",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpqhdrmetaparser.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmml",
+                "libsdrparser",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpqsharememory",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpqsharememory.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libgralloc_extra",
+                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpqsharememory.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libgralloc_extra",
+                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpqtuning",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libpqtuning.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libpqsharememory",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libpqtuning.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libpqsharememory",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdrparser",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsdrparser.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmml",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsdrparser.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmml",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libstfaceunlock",
     owner: "bluefox",
     strip: {
@@ -855,6 +2019,162 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdpframework",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mt6768/libdpframework.so",
+            ],
+            shared_libs: [
+                "libpqsharememory",
+                "libpqtuning",
+                "libhidlbase",
+                "libhidlmemory",
+                "libbinder_ndk",
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
+                "libgralloc_extra",
+                "libpq_sec",
+                "libutils",
+                "libion",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libutilscallstack",
+                "libpqhdrmetaparser",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6768/libdpframework.so",
+            ],
+            shared_libs: [
+                "libpqsharememory",
+                "libpqtuning",
+                "libhidlbase",
+                "libhidlmemory",
+                "libbinder_ndk",
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
+                "libgralloc_extra",
+                "libpq_sec",
+                "libutils",
+                "libion",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libutilscallstack",
+                "libpqhdrmetaparser",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "mt6768",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmml",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mt6768/libmml.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6768/libmml.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "mt6768",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpq_sec",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/mt6768/libpq_sec.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6768/libpq_sec.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "mt6768",
     prefer: true,
     soc_specific: true,
 }
@@ -1160,6 +2480,129 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mms-V1-ndk",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.mms-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mms-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq@2.0",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.pq_aidl-V2-ndk",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.pq_aidl-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.graphics.common-V7-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvolte_core_shr",
     owner: "bluefox",
     strip: {
@@ -1375,252 +2818,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "arm.graphics-V5-ndk",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/arm.graphics-V5-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "arm.mali.platform-V2-ndk",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/arm.mali.platform-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libGLES_mali",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libGLES_mali.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.allocator-V2-ndk",
-                "libbinder_ndk",
-                "liblog",
-                "libutilscallstack",
-                "libbase",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libgpu_aux",
-                "libion",
-                "libged",
-                "libgpud",
-                "libgralloc_extra",
-                "libladder",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libcutils",
-                "libhardware",
-                "android.hardware.graphics.common-V7-ndk",
-                "libdmabufheap",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libGLES_meow",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libGLES_meow.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libnativewindow",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMEOW_data",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libMEOW_data.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMEOW_gift",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libMEOW_gift.so",
-            ],
-            shared_libs: [
-                "libFrameRecord",
-                "libDefaultFpsActor",
-                "libNoFpsActor",
-                "libnativewindow",
-                "libutilscallstack",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMEOW_qt",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libMEOW_qt.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libMEOW_trace",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libMEOW_trace.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libnativewindow",
-                "libGLES_meow",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "egl",
     prefer: true,
     soc_specific: true,
 }
@@ -2568,32 +3765,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vulkan.mali",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vulkan.mali.so",
-            ],
-            shared_libs: [
-                "libGLES_mali",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "imx230_mipi_raw_IdxMgr",
     owner: "bluefox",
     strip: {
@@ -3018,60 +4189,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libDefaultFpsActor",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libDefaultFpsActor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libFrameRecord",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libFrameRecord.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libHEVCdec_sa.ca7.android",
     owner: "bluefox",
     strip: {
@@ -3167,33 +4284,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libNoFpsActor",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libNoFpsActor.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -3702,81 +4792,6 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarm_egl_properties_sysprop",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarm_egl_properties_sysprop.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarm_gralloc_properties_sysprop",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarm_gralloc_properties_sysprop.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libarm_mali_config_sysprops",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libarm_mali_config_sysprops.so",
-            ],
-            shared_libs: [
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -6704,211 +7719,6 @@ cc_prebuilt_library_shared {
                 "libutilscallstack",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libged",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libged.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libsync",
-                "libnativewindow",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgpu_aux",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgpu_aux.so",
-            ],
-            shared_libs: [
-                "libdpframework",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "libnativewindow",
-                "libgralloc_extra",
-                "libsync",
-                "libgpud",
-                "libhidlbase",
-                "libbase",
-                "libbinder_ndk",
-                "libgralloctypes",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "vendor.mediatek.hardware.mms-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgpud",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgpud.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.common-V7-ndk",
-                "android.hardware.graphics.allocator-V2-ndk",
-                "libcutils",
-                "libutils",
-                "libutilscallstack",
-                "liblog",
-                "libsync",
-                "libhardware",
-                "libnativewindow",
-                "libgralloc_extra",
-                "libhidlbase",
-                "libgralloctypes",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloc_extra",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloc_extra.so",
-            ],
-            shared_libs: [
-                "libhardware",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libdmabufheap",
-                "libged",
-                "libutilscallstack",
-                "android.hardware.graphics.common@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloc_metadata",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloc_metadata.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libc",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloctypes_mtk",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloctypes_mtk.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
-                "libhardware",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libion",
-                "libc",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -10836,93 +11646,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpqhdrmetaparser",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpqhdrmetaparser.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libmml",
-                "libsdrparser",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpqsharememory",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpqsharememory.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libgralloc_extra",
-                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpqtuning",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpqtuning.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libpqsharememory",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libpqxmlparser",
     owner: "bluefox",
     strip: {
@@ -11088,34 +11811,6 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libssl",
                 "libfile_op",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsdrparser",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdrparser.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libmml",
                 "libc++",
                 "libc",
                 "libm",
@@ -11819,49 +12514,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdpframework",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6768/libdpframework.so",
-            ],
-            shared_libs: [
-                "libpqsharememory",
-                "libpqtuning",
-                "libhidlbase",
-                "libhidlmemory",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.pq@2.0",
-                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
-                "libgralloc_extra",
-                "libpq_sec",
-                "libutils",
-                "libion",
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libhardware",
-                "libnativewindow",
-                "libutilscallstack",
-                "libpqhdrmetaparser",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6768",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmagent",
     owner: "bluefox",
     strip: {
@@ -11893,34 +12545,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmml",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6768/libmml.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6768",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmmlpqImpl",
     owner: "bluefox",
     strip: {
@@ -11938,34 +12562,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6768",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpq_sec",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6768/libpq_sec.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -12806,32 +13402,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mms-V1-ndk",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mms-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtklight-V1-ndk",
     owner: "bluefox",
     strip: {
@@ -13465,61 +14035,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.0",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq_aidl-V2-ndk",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V7-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -17455,6 +17970,27 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
+}
+
+install_symlink {
+    name: "vendor_lib_libdpframework_so",
+    soc_specific: true,
+    installed_location: "lib/libdpframework.so",
+    symlink_target: "/vendor/lib/mt6768/libdpframework.so",
+}
+
+install_symlink {
+    name: "vendor_lib_libmml_so",
+    soc_specific: true,
+    installed_location: "lib/libmml.so",
+    symlink_target: "/vendor/lib/mt6768/libmml.so",
+}
+
+install_symlink {
+    name: "vendor_lib_libpq_sec_so",
+    soc_specific: true,
+    installed_location: "lib/libpq_sec.so",
+    symlink_target: "/vendor/lib/mt6768/libpq_sec.so",
 }
 
 install_symlink {

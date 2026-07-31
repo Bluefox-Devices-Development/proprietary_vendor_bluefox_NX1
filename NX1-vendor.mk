@@ -256,13 +256,34 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     av-audio-types-aidl-V1-ndk \
+    arm.graphics-V5-ndk \
+    arm.mali.platform-V2-ndk \
+    libGLES_mali \
+    libGLES_meow \
+    libMEOW_data \
+    libMEOW_gift \
+    libMEOW_qt \
+    libMEOW_trace \
     consumerir.common \
     lights.mt6768 \
+    vulkan.mali \
+    libDefaultFpsActor \
+    libFrameRecord \
     libGsFace_ca \
+    libNoFpsActor \
     libTEECommon \
     libaedv \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
+    libarm_mali_config_sysprops \
     libbwc \
     libcv_faceid \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
     libgz_uree \
     libion_mtk \
     libion_ulit \
@@ -272,16 +293,26 @@ PRODUCT_PACKAGES += \
     libladder \
     libmtk_drvb \
     libpl \
+    libpqhdrmetaparser \
+    libpqsharememory \
+    libpqtuning \
+    libsdrparser \
     libstfaceunlock \
     libteec \
     libvcodec_utility_v3a \
     libvcodecdrv_v3a \
     libverno \
+    libdpframework \
+    libmml \
+    libpq_sec \
     libaecsw_mtk \
     libagc1sw_mtk \
     libagc2sw_mtk \
     libnssw_mtk \
     libpreprocessingaidl_mtk \
+    vendor.mediatek.hardware.mms-V1-ndk \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq_aidl-V2-ndk \
     libvolte_core_shr \
     libvolte_xdmc_shr \
     libvpudv3a_vcodec \
@@ -289,14 +320,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.rcs@2.0 \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
-    arm.graphics-V5-ndk \
-    arm.mali.platform-V2-ndk \
-    libGLES_mali \
-    libGLES_meow \
-    libMEOW_data \
-    libMEOW_gift \
-    libMEOW_qt \
-    libMEOW_trace \
     gc5025_mipi_raw_IdxMgr \
     android.hardware.audio.effect.aidl-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
@@ -321,7 +344,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
-    vulkan.mali \
     imx230_mipi_raw_IdxMgr \
     lib3a.ae.core \
     lib3a.ae \
@@ -337,13 +359,10 @@ PRODUCT_PACKAGES += \
     lib3a.log \
     lib3a.n3d3a \
     libDR \
-    libDefaultFpsActor \
-    libFrameRecord \
     libHEVCdec_sa.ca7.android \
     libJpgEncPipe \
     libMcClient \
     libMtkSpeechEnh \
-    libNoFpsActor \
     libSQLiteModule_VER_ALL \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -361,9 +380,6 @@ PRODUCT_PACKAGES += \
     libabfadp \
     libapmonitor_vendor \
     libapu_mdw \
-    libarm_egl_properties_sysprop \
-    libarm_gralloc_properties_sysprop \
-    libarm_mali_config_sysprops \
     libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
@@ -455,12 +471,6 @@ PRODUCT_PACKAGES += \
     libfile_op \
     libforkexecwrap \
     libformatter \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
     libh264dec_customize \
     libh264dec_sa.ca7 \
     libh264dec_sd.ca7 \
@@ -579,15 +589,11 @@ PRODUCT_PACKAGES += \
     libnxp_extamp_intf \
     libpq_cust_base \
     libpqframework \
-    libpqhdrmetaparser \
-    libpqsharememory \
-    libpqtuning \
     libpqxmlparser \
     libratconfig \
     librcs_volte_core \
     librilfusion \
     librt_extamp_intf \
-    libsdrparser \
     libsensor_custom \
     libsensorndkbridge \
     libsilkybrightnesscore \
@@ -613,11 +619,8 @@ PRODUCT_PACKAGES += \
     libwifinvramdata \
     libwo \
     libwpfa \
-    libdpframework \
     libmmagent \
-    libmml \
     libmmlpqImpl \
-    libpq_sec \
     libpqparamparser \
     mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
@@ -648,7 +651,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
-    vendor.mediatek.hardware.mms-V1-ndk \
     vendor.mediatek.hardware.mtklight-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
@@ -673,8 +675,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram-V1-ndk \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
     vendor.mediatek.hardware.videotelephony-V1-ndk_vendor \
@@ -827,6 +827,9 @@ PRODUCT_PACKAGES += \
     vtservice
 
 PRODUCT_PACKAGES += \
+    vendor_lib_libdpframework_so \
+    vendor_lib_libmml_so \
+    vendor_lib_libpq_sec_so \
     vendor_lib64_libdpframework_so \
     vendor_lib64_libmml_so \
     vendor_lib64_libmmlpqImpl_so \
