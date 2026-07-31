@@ -321,6 +321,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
     gc5025_mipi_raw_IdxMgr \
+    gc5025_mipi_raw_tuning \
     android.hardware.audio.effect.aidl-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
@@ -345,6 +346,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
     imx230_mipi_raw_IdxMgr \
+    imx230_mipi_raw_tuning \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.af.core \
@@ -626,7 +628,9 @@ PRODUCT_PACKAGES += \
     mtk_lbs_service-impl \
     libmtkcam_streaminfo_plugin-p1stt \
     ov5670_mipi_raw_IdxMgr \
+    ov5670_mipi_raw_tuning \
     s5k2t7sp_mipi_raw_IdxMgr \
+    s5k2t7sp_mipi_raw_tuning \
     vendor.mediatek.hardware.apmonitor-V1-ndk \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.audio-V1-ndk \
