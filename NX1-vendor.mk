@@ -252,7 +252,13 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/NX1/proprietary/vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_patch_mcu_1a_1_hdr.bin \
     vendor/bluefox/NX1/proprietary/vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_1a_1_hdr.bin \
     vendor/bluefox/NX1/proprietary/vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_1a_1_hdr.bin \
-    vendor/bluefox/NX1/proprietary/vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
+    vendor/bluefox/NX1/proprietary/vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_1a_1_hdr.bin \
+    vendor/bluefox/NX1/proprietary/vendor/media/ST_Align_Occlusion_1.6.4.model:$(TARGET_COPY_OUT_VENDOR)/media/ST_Align_Occlusion_1.6.4.model \
+    vendor/bluefox/NX1/proprietary/vendor/media/ST_Detect_9.2.0.model:$(TARGET_COPY_OUT_VENDOR)/media/ST_Detect_9.2.0.model \
+    vendor/bluefox/NX1/proprietary/vendor/media/ST_Liveness_7.37.1.model:$(TARGET_COPY_OUT_VENDOR)/media/ST_Liveness_7.37.1.model \
+    vendor/bluefox/NX1/proprietary/vendor/media/ST_Ocular_2.8.0.model:$(TARGET_COPY_OUT_VENDOR)/media/ST_Ocular_2.8.0.model \
+    vendor/bluefox/NX1/proprietary/vendor/media/ST_Verify_3.77.0.model:$(TARGET_COPY_OUT_VENDOR)/media/ST_Verify_3.77.0.model \
+    vendor/bluefox/NX1/proprietary/vendor/media/faceunlock/license.lic:$(TARGET_COPY_OUT_VENDOR)/media/faceunlock/license.lic
 
 PRODUCT_PACKAGES += \
     av-audio-types-aidl-V1-ndk \

@@ -3,6 +3,6 @@ service vendor.face-example /vendor/bin/hw/android.hardware.biometrics.face-serv
     class hal
     user system
     group system
-    interface aidl android.hardware.biometrics.face.IFace/virtual
+    interface aidl android.hardware.biometrics.face.IFace/default
 
 

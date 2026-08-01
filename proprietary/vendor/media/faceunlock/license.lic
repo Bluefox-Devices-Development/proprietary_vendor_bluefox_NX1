@@ -1,0 +1,64 @@
+{
+  "brand": "fortuneship1",
+  "ver": "1.0",
+  "expiration_date": "2025-12-31",
+  "properties": [
+    [
+      {
+        "name": "ro.build.version.release",
+        "value": "15"
+      },
+      {
+        "name": "ro.vendor.mediatek.platform",
+        "value": "MT6769"
+      },
+      {
+        "name": "ro.product.vendor.model",
+        "value": "SCHOK SV69"
+      }
+    ],
+    [
+      {
+        "name": "ro.build.version.release",
+        "value": "16"
+      },
+      {
+        "name": "ro.vendor.mediatek.platform",
+        "value": "MT6789"
+      },
+      {
+        "name": "ro.product.vendor.model",
+        "value": "ROCK 3"
+      }
+    ],
+    [
+      {
+        "name": "ro.build.version.release",
+        "value": "15"
+      },
+      {
+        "name": "ro.vendor.mediatek.platform",
+        "value": "MT6765"
+      },
+      {
+        "name": "ro.product.vendor.model",
+        "value": "Bolt 1U"
+      }
+    ],
+    [
+      {
+        "name": "ro.build.version.release",
+        "value": "15"
+      },
+      {
+        "name": "ro.vendor.mediatek.platform",
+        "value": "MT6768"
+      },
+      {
+        "name": "ro.product.vendor.model",
+        "value": "NX1"
+      }
+    ]
+  ],
+  "signature": "bG209pF7Ggpv9iri72JDq+9evIcZKCtLmlxFut5cziRF+3NfSNHOza2nz3pfEGIcCN+UlaTWnEqW6jbSasA538qQ8Noeohd0xnEW3q8yOnwfWNTpGf3e6TEIpHYzzIEAhOStng5lcBkEYvSF+ESqWbqGXBMpQ5UU+ctvCFT1XPpqkyPpr7x7A+hsNPxBFlwByUJmNwaZhMyyGE3hDOFh0rcWGMObJ2/9fp7p13Kr6Uf9pPIPqYJKcTToDgJ5DBdJwXkRR9VmXKSfKh2FeN10a0jNQtNJoiKkF+T3q/yXMTQCcVk2EiPU5ZGE4sgtqqlJr/PQ6vRWbKZKFY5idL1WMVeF3inqFmzGQBL8cO0L00iZUOmkLU76fUjAW0Uo26Hm7E6YgAKxwR/D12M5MCW7H7MYy/9ilTcbd/unmthvzxYM1IVpfkAGbknBiNEH8jBsEmYxTUd38gGGpcajXJ9eyA4XupsYrNPAtpLj0eVCMu3xOVcfMPfSmglp4L4bdJa1Q+AKtEo+dI4BF6LGiE4iLojZoamd93/IpjpAnVT5uFdiwThO1Ybew4YHErjAfhe9HjnMArXJQVhgmQJKw/YE+VjC3h0+wHFgRWKBWgPr+UeMHfblzoiaTNjLFE6S1WDuUnk4VcAWmDlMGDV8bAzN+XDgUGK+uNppbQqYVfE1oJE="
+}
